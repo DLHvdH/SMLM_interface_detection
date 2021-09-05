@@ -12,16 +12,16 @@ and the Poisson process is homogeneous in both regions but with different densit
 figure below:
 
 										a
-									-----------------
-									|	\			|
-									|	 \			|
+									------------------------
+									|	\		|
+									|	 \		|
 									|	  \	   mu2	|
 									|	   \		|
-									|  mu1	\		|
-									|		 \		|
-									|		  \		|
-									-----------------
-												b
+									|  mu1	    \		|
+									|	     \		|
+									|	      \		|
+									------------------------
+											b
 
 To generate an instance of the Poisson Point Process use [generatePoisson2D]. Here you need to 
 specify the points [a] and [b] for the line that separates the two regions. You also need to 
@@ -35,15 +35,15 @@ To compute the MLE the function only considers lines through pairs of points(p1,
 given top bandwith and bottom bandwidth:
 
 								top bandwidth		
-									-----------------
-									|  	  |			|
+									------------------------
+									|     |			|
 									|     |			|
 									|_____|			|
-									|	   			|
+									|	   		|
 									|  	 _______	|
-									|	|	    |	|
+									|	|	|	|
 									|	|    	|	|
-									-----------------
+									------------------------
 									  bottom bandwidth
 									
 Both the boundaries of the top bandwidth and the bottom bandwidth can be specified using the 
@@ -69,15 +69,15 @@ p1 is one of the interval boundaries for the partitioned top bandwidth and p2 an
 in the bottom bandwidth 
 
 									   p1
-									|-|-|-|----------
-									T	  |			|
-								 p1 T	  |			|
+									|-|-|-|-----------------
+									T     |			|
+								 p1 	T     |			|
 									T_____|			|
-									|	   			|
-									|  	 _____		|
-									|	|	  |		|
-									|	|	  |		|
-									----|-|-|-|------
+									|	   		|
+									|   	    _____	|
+									|   	   |	 |	|
+									|   	   |	 |	|
+									-----------|-|-|-|------
 										   p2
 
 Points:
@@ -86,15 +86,15 @@ For this the parameter [IterationMethod] should be set to 'points'. With this se
 computed by considering lines that go through pairs of points (p1, p2), where p1 and p2 are points 
 of the Poisson process in the top and bottom bandwidth, respectively.
 
-									-----------------
-									|  	  |			|
+									------------------------
+									|     |			|
 									|  p1 |			|
 									|_____|			|
-									|	   			|
+									|			|
 									|  	 _______	|
-									|	|	    |	|
+									|	|	|	|
 									|	|   p2 	|	|
-									-----------------
+									------------------------
 
 The script [testBoundaryEstimation] provides a minimal code example for running the estimation 
 procedure.
