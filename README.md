@@ -1,5 +1,6 @@
-# Interface_detection_in_SRM
-Code for detecting interfaces in super-resolution microscopy (SRM) data.
+# SMLM_interface_detection
+Code for detecting interfaces in super-resolution microscopy (SRM) data, 
+typically single-molecule localization microscopy (SMLM).
 
 The code provided here is under Copyright © 2021 Dingeman van der Haven and Pim van der Hoorn
 
