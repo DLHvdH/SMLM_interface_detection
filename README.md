@@ -99,3 +99,9 @@ of the Poisson process in the top and bottom bandwidth, respectively.
 
 The script [testBoundaryEstimation] provides a minimal code example for running the estimation 
 procedure.
+
+Note: The script mleBoundaryEstimationParticle currently does not account for overlap between the 
+particles at the interface. If the particles at the interface overlap, the overlap area between two
+particles will be subtracted from the left and/or right area twice, which should not happen. This 
+needs to be corrected in a future version by checking all particle pairs for overlap and then making
+sure that the overlap between the particles is only subtracted once.
