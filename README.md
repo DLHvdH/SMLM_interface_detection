@@ -4,6 +4,10 @@ typically single-molecule localization microscopy (SMLM).
 
 The code provided here is under Copyright © 2021 Dingeman van der Haven and Pim van der Hoorn
 
+This method is explained in detail in the publication "Parameterless detection of liquid-liquid 
+interfaces with sub-micron resolution in single-molecule localization microscopy", 2022,
+https://doi.org/10.1016/j.jcis.2022.03.116
+
 Brief explanation for using the scripts for determining the MLE for the boundary between two 
 regions of a Poisson Point Process with different densities in each region.
 
